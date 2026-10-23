@@ -1,0 +1,20 @@
+.home {
+  position: fixed; /* 固定在视口的位置 */
+  top: 10px; /* 距离页面顶部的距离 */
+  left: 10px; /* 距离页面左侧的距离 */
+  background-color: #ffffff; /* 按钮背景色 */
+  color: #008000; /* 按钮文字颜色 */
+  text-decoration: none; /* 移除链接下划线 */
+  padding: 10px 15px; /* 内边距调整按钮大小 */
+  border: 2px solid #008000; /* 按钮边框 */
+  border-radius: 5px; /* 按钮圆角 */
+  font-size: 14px; /* 调整字体大小 */
+  font-weight: bold; /* 字体加粗 */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
+  z-index: 1000; /* 确保按钮位于最上层 */
+}
+
+.home:hover {
+  background-color: #008000; /* 悬停时背景色 */
+  color: #ffffff; /* 悬停时文字颜色 */
+}

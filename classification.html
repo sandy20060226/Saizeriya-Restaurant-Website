@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="flex.css" type="text/css">
+	<link rel="stylesheet" href="home.css" type="text/css">
+    <title>圖片展示頁</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #008000; /* 背景设置为绿色 */
+        color: white; /* 字体颜色为白色 */
+      }
+
+      .container {
+          margin-bottom: 20px; /* Adjust this value for more space between the navigation and content */
+}
+
+      .gallery-section {
+          margin-top: 60px; /* Adds space between the navigation and the section */
+          margin-bottom: 100px; /* Keep the space between sections */
+}
+
+      .section-label {
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 30px;
+        color: white; /* 市名字体颜色为白色 */
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 每行两列 */
+        gap: 30px; /* 图片之间的间距 */
+      }
+
+      .gallery-item {
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        text-align: center;
+        background: #ffffff; /* 背景为白色 */
+        color: black; /* 描述文字为黑色 */
+        padding: 50px;
+      }
+
+      .gallery-item img {
+        max-width: 80%;
+        height: auto;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 25px;
+      }
+
+      .gallery-item p {
+        margin: 10px 0 0;
+        font-size: 14px;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: white; /* 标题文字为白色 */
+      }
+    </style>
+  </head>
+  <body>
+   <body>
+   <a href="index.html" class="home">回到主頁面</a>
+    <h1>分店介紹</h1>
+
+    <!-- 页内超链接 -->
+    <div class="container">
+      <div class="item"><a href="#taipei">台北市</a></div>
+      <div class="item"><a href="#newtaipei">新北市</a></div>
+      <div class="item"><a href="#taoyuan">桃園市</a></div>
+    </div>
+
+    <!-- 台北市 -->
+    <div class="gallery-section" id="taipei">
+      <div class="section-label">台北市</div>
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="image/image1.jpg" alt="信義ATT店">
+          <p>信義ATT店</p><br>
+		  <p>台北市信義區松壽路12號4F</p>
+        </div>
+        <div class="gallery-item">
+          <img src="image/image2.jpg" alt="西門店">
+          <p>西門店</p><br>
+		  <p>台北市萬華區峨嵋街37號2樓</p>
+        </div>
+        <div class="gallery-item">
+          <img src="image/image3.jpg" alt="天母西路店">
+          <p>天母西路店</p><br>
+		  <p>台北市士林區天母西路13巷6號1樓</p>
+        </div>
+        <div class="gallery-item">
+          <img src="image/image4.jpg" alt="重慶家樂福店">
+          <p>重慶家樂福店</p><br>
+		  <p>台北市大同區重慶北路二段171號1樓</p>
+        </div>
+		 <div class="gallery-item">
+          <img src="image/image5.jpg" alt="台北館前店">
+          <p>台北館前店</p><br>
+		  <p>台北市中正區館前路6號3樓</p>
+        </div>
+		 <div class="gallery-item">
+          <img src="image/image12.jpg" alt="中山南京店">
+          <p>中山南京店</p><br>
+		  <p>台北市中山區中山北路一段152號B1</p>
+        </div>
+		 <div class="gallery-item">
+          <img src="image/image13.jpg" alt="師範大學店">
+          <p>師範大學店</p><br>
+		  <p>臺北市大安區和平東路一段129-1號</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 新北市 -->
+    <div class="gallery-section" id="newtaipei">
+      <div class="section-label">新北市</div>
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="image/image6.jpg" alt="板橋亞東店">
+          <p>板橋亞東店</p><br>
+		  <p>新北市板橋區南雅南路二段122-23號B1</p>
+        </div>
+        <div class="gallery-item">
+          <img src="image/image7.jpg" alt="板橋府中店">
+          <p>板橋府中店</p><br>
+		  <p>新北市板橋區中山路一段21-1號2樓</p>
+        </div>
+        <div class="gallery-item">
+          <img src="image/image8.jpg" alt="新埔三猿店">
+          <p>新埔三猿店</p><br>
+		  <p>新北市板橋區文化路一段360號B1</p>
+        </div>
+        <div class="gallery-item">
+          <img src="image/image9.jpg" alt="三重愛買店">
+          <p>三重愛買店</p><br>
+		  <p>新北市三重區中正北路193巷45號</p>
+		  </div>
+		   <div class="gallery-item">
+          <img src="image/image10.jpg" alt="頂溪店">
+          <p>頂溪店</p><br>
+		  <p>新北市永和區永和路二段121號2F</p>
+        </div>
+		 <div class="gallery-item">
+          <img src="image/image11.png" alt="大坪林店">
+          <p>大坪林店</p><br>
+		  <p>新北市新店區民權路25號2樓</p>
+        </div>
+		<div class="gallery-item">
+          <img src="image/image14.jpg" alt="淡新家樂福店">
+          <p>淡新家樂福店</p><br>
+		  <p>新北市淡水區中山北路二段383號3樓</p>
+        </div>
+		<div class="gallery-item">
+          <img src="image/image15.jpg" alt="淡水站前店">
+          <p>淡水站前店</p><br>
+		  <p>新北市淡水區中山路8號10樓</p>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 桃園市 -->
+    <div class="gallery-section" id="taoyuan">
+      <div class="section-label">桃園市</div>
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="image/image16.jpg" alt="桃園ATT店">
+          <p>桃園ATT店</p><br>
+		  <p>桃園市桃園區中正路47號4樓</p>
+        </div>
+        <div class="gallery-item">
+          <img src="image/image17.jpg" alt="桃園愛買店">
+          <p>桃園愛買店</p><br>
+		  <p>桃園市桃園區中山路939號</p>
+        </div>
+        <div class="gallery-item">
+          <img src="image/image18.jpg" alt="中原家樂福店">
+          <p>中原家樂福店</p><br>
+		  <p>桃園市中壢區中華路二段501號B1</p>
+        </div>
+        <div class="gallery-item">
+          <img src="image/image19.jpg" alt="經國家樂福店">
+          <p>經國家樂福店</p><br>
+		  <p>桃園市桃園區經國路369號2樓</p>
+		  </div>
+		  <div class="gallery-item">
+          <img src="image/image20.jpg" alt="八德家樂福店">
+          <p>八德家樂福店</p><br>
+		  <p>桃園市八德區介壽路一段728號B2</p>
+		  </div>
+		  <div class="gallery-item">
+          <img src="image/image21.jpg" alt="中壢站前店">
+          <p>中壢站前店</p><br>
+		  <p>桃園市中壢區中正路51號4樓</p>
+        </div>
+      </div>
+    </div>
+  </body>
+   </body>
+</html>
+
+
+
+
+

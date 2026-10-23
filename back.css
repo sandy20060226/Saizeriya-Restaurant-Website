@@ -1,0 +1,74 @@
+@charset "UTF-8";
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; /* 確保寬度和內外邊距計算正確 */
+}
+body {
+    width: 100%;
+    background: #006400; /* 改為深綠色 */
+    margin: 0;
+    font-family: Arial, sans-serif; /* 設置全局字體 */
+    height: 100vh; /* 佔滿整個螢幕高度 */
+    display: flex;
+    flex-direction: column;
+}
+header {
+  width: 100%;
+  background: white;
+  padding: 20px 0; /* 添加內邊距讓內容更美觀 */
+  text-align: center; /* 居中內容 */
+}
+.container {
+  display: flex; /* 使用 Flexbox 替代浮動布局 */
+  flex: 1; /* 佔滿剩餘空間 */
+  flex-wrap: nowrap;
+}
+main {
+  flex: 2.5; /* 占比 60% */
+  height: auto; /* 自適應高度 */
+  background: green;
+  padding: 30px; /* 添加內邊距讓內容更美觀 */
+}
+main img {
+        width: 100%; /* 图片宽度与 main 一致 */
+        height: auto; /* 保持图片比例 */
+        object-fit: cover; /* 可选，裁剪图片以适应容器 */
+        border-radius: 5px; /* 可选，圆角效果 */
+}
+aside {
+  flex: 2.5; /* 占比 40% */
+  height: auto; /* 自適應高度 */
+  background: green;
+  padding: 20px; /* 添加內邊距讓內容更美觀 */
+}
+aside img {
+        width: 100%; /* 图片宽度与 main 一致 */
+        height: auto; /* 保持图片比例 */
+        object-fit: cover; /* 可选，裁剪图片以适应容器 */
+        border-radius: 5px; /* 可选，圆角效果 */
+      }
+footer {
+  background-color: #333; /* 设置背景颜色 */
+  color: white;           /* 设置字体颜色 */
+  text-align: center;     /* 居中对齐 */
+  padding: 20px;          /* 添加内边距 */
+  position: relative;     /* 确保footer在页面中有位置 */
+  width: 100%;            /* 确保宽度占满屏幕 */
+  z-index: 1;             /* 确保footer不会被其他元素覆盖 */
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* 在小螢幕上改為垂直佈局 */
+  }
+  main, aside {
+    flex: none;
+    width: 100%; /* 每個區塊佔據全寬 */
+  }
+}
+
+
+
+
+
+ 
